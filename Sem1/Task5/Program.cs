@@ -15,7 +15,7 @@ if (N > 0)
         }
 }
     
-if (N < 0)
+else
 {
     while (count <= -N)
         {
