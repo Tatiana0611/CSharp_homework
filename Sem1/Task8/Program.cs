@@ -3,7 +3,7 @@
 Console.Write("Введите положительное число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-int count = 1;
+int count = 2;
 
 Console.Write($"Все четные числа от 1 до {N}: ");
 
