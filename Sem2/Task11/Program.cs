@@ -10,3 +10,8 @@ int numberA = number/100;
 int numberC = number % 10;
 Console.WriteLine(numberA*10 + numberC);*/
 
+/*string s = new Random().Next(100, 1000).ToString();
+Console.WriteLine($"Number is {s}");
+int first = int.Parse(s[0].ToString());
+int last = int.Parse(s[s.Length - 1].ToString());
+Console.WriteLine($"{first}{last}");*/
