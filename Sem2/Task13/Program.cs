@@ -2,6 +2,18 @@
 // или сообщает, что третьей цифры нет
 Console.Write("Введите число: ");
 string str = Console.ReadLine().ToString();
+if (str.Length > 2)
+{
+    Console.Write($"Третья цифра введенного числа: {str[2]}");
+}
+else
+{
+    Console.Write("Третьей цифры нет");
+}
+
+//Второй вариант
+/* Console.Write("Введите число: ");
+string str = Console.ReadLine().ToString();
 int[] array = new int[str.Length];
 for (int i = 0; i < str.Length; i++)
 {
@@ -13,5 +25,5 @@ if (str.Length > 2)
 }
 else
 {
-    Console.Write("Неверное число");
-}
+    Console.Write("Третьей цифры нет");
+}*/
