@@ -4,7 +4,7 @@
 int number = new Random().Next(10, 100);
 int a = number / 10;
 int b = number % 10;
-Console.WriteLine(number);
+Console.WriteLine($"Случайное число: {number}");
 if (a > b) 
     Console.Write($"Наибольшая цифра: {a}");
 else 
