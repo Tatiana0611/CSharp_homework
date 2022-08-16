@@ -1,14 +1,12 @@
-﻿// Напишите цикл, который принимает на вход 
-// два числа (A и B) и возводит число A в натуральную степень B
-Console.Write("Введите число A: ");
-int A = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число B: ");
-int B = Convert.ToInt32(Console.ReadLine());
-int result = 1;
-int i = 1;
-while (i <= B)
+﻿// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+Console.Write("Введите число: ");
+string str = Console.ReadLine().ToString();
+int A = Convert.ToInt32(str.ToString());
+int result = 0;
+int i = 0;
+while (i <= str.Length-1)
 {
-    result *= A;
+    result += Convert.ToInt32(str[i].ToString());
     i++;
 }
-Console.WriteLine($"{A} в степени {B} равно {result}");
+Console.WriteLine($"Сумма цифр во введенном числе: {result}");
