@@ -4,17 +4,34 @@
 // int[] arr = new int[8];
 // for (int i = 0; i < arr.Length; i++)
 // {
-//     arr[i] = new Random().Next(1, 10);
+//     arr[i] = new Random().Next(1, 100);
 //     Console.WriteLine(arr[i]);
 // }
 
 // Второй вариант
 
+// int[] FillArray(int[] arr)
+// {
+//     for (int i = 0; i < arr.Length; i++)
+//     {
+//         arr[i] = new Random().Next(1, 100);
+//     }
+//     return arr;
+// }
+
+// int[] n = new int[8];
+
+// Console.WriteLine("[" + string.Join(", ", FillArray(n)) + "]");
+
+
+// Третий вариант
+
 int[] FillArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = new Random().Next(1, 10);
+        Console.Write($"Введите {i+1} элемент массива: ");
+        arr[i] = Convert.ToInt32(Console.ReadLine());
     }
     return arr;
 }
