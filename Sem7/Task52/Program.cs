@@ -34,6 +34,12 @@ void AverageOfColumnElements(int[,] matrix)
     }    
 }
 
-int[,] matr = new int[2, 6];
+Console.Write("Введите количество строк массива: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите количество столбцов массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+int[,] matr = new int[m, n];
+
 FillAndPrintMatrix(matr);
 AverageOfColumnElements(matr);
