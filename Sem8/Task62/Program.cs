@@ -12,11 +12,10 @@ int l = matrix.GetLength(0);
 for (int i = 0; i < l / 2; i++)
 {
     for (int j = i; j < l - i; j++) matrix[i, j] = n++;
-    for (int k = i + 1; k < l - i; k++) matrix[k, l - 1 - i] = n++;
+    for (int j = i + 1; j < l - i; j++) matrix[j, l - 1 - i] = n++;
     for (int j = l - i - 2; j >= i; j--) matrix[l - 1 - i, j] = n++;
-    for (int k = l - 2 - i; k > i; k--) matrix[k, i] = n++;
+    for (int j = l - 2 - i; j > i; j--) matrix[j, i] = n++;
 }
-
 
 // Печать массива
 for (int i = 0; i < matrix.GetLength(0); i++)
